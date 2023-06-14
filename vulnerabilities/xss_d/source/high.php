@@ -1,10 +1,10 @@
 <?php
 
 // Is there any input?
-if ( array_key_exists( "default", $_GET ) && !is_null ($_GET[ 'default' ]) ) {
+if ( !is_null ($defaults) ) {
 
 	# White list the allowable languages
-	switch ($_GET['default']) {
+	switch ($defaults) {
 		case "French":
 		case "English":
 		case "German":
